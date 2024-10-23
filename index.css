@@ -1,0 +1,82 @@
+/* Estilo del cuerpo */
+body {
+    background-color: #0a0a0f;
+    color: #e0e4e9;
+    font-family: 'Cinzel', serif; /* Fuente con estilo gótico */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilo de la carta */
+.carta {
+    width: 80%;
+    max-width: 800px;
+    padding: 50px;
+    background: linear-gradient(145deg, #1e1e26, #0f0f14);
+    border: 3px solid #4b0082; /* Borde morado oscuro */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: aparecer 2s ease-out forwards;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db; /* Azul gótico */
+    font-size: 2.8em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.poema {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+/* Ilustración */
+.ilustracion {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ilustracion img {
+    width: 120px;
+    margin-top: 10px;
+    animation: latido 1.5s infinite;
+}
+
+/* Efecto de latido */
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Reproductor de Spotify */
+.spotify-embed {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
